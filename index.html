@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2027 CNY 项目时间线 · 微信营销</title>
+<link rel="preconnect" href="https://wxa.wxs.qq.com" crossorigin>
+<style>
+/* ═══════════════════ Tokens ═══════════════════ */
+:root {
+  --wa-green: #07C160;
+  --wa-green-hover: #05AC55;
+  --wa-green-soft: #E7F8EF;
+  --wa-green-wash: rgba(7,193,96,0.06);
+  --wa-green-deep: #018741;
+  --wa-red: #FA5151;
+  --wa-orange: #FF9322;
+  --wa-link: #10AEFF;
+  --wa-gray-0: #FFFFFF;
+  --wa-gray-50: #FAFAFA;
+  --wa-gray-100: #F2F2F2;
+  --wa-gray-200: #EBEBEB;
+  --wa-gray-300: #E6E6E6;
+  --wa-gray-600: #C7C7C7;
+  --wa-gray-700: #A3A3A3;
+  --wa-gray-800: #6B6B6B;
+  --wa-gray-900: #1F1F1F;
+  --wa-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans CN", sans-serif;
+  --wa-font-digit: 'Gilroy', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, 'WXAD-HYQiHei-80S', sans-serif;
+  --wa-shadow-card: 0 0 0 1px rgba(0,0,0,0.02), 0 4px 16px rgba(0,0,0,0.03);
+  --wa-shadow-card-hover: 0 0 0 1px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+  --wa-shadow-elevated: 0 0 0 1px rgba(0,0,0,0.03), 0 12px 32px rgba(0,0,0,0.06);
+  --wa-radius-card: 14px;
+  --wa-radius-btn: 6px;
+  --wa-radius-tag: 4px;
+  --wa-ring-brand: 0 0 0 3px rgba(7,193,96,0.20);
+}
+
+/* Gilroy 6 weight */
+@font-face { font-family: 'Gilroy'; font-weight: 300; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-Light.otf')      format('opentype'); }
+@font-face { font-family: 'Gilroy'; font-weight: 400; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-Regular.otf')    format('opentype'); }
+@font-face { font-family: 'Gilroy'; font-weight: 500; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-Medium.otf')     format('opentype'); }
+@font-face { font-family: 'Gilroy'; font-weight: 600; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-Semibold.otf')   format('opentype'); }
+@font-face { font-family: 'Gilroy'; font-weight: 700; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-Bold.otf')       format('opentype'); }
+@font-face { font-family: 'Gilroy'; font-weight: 800; font-style: normal; font-display: swap; src: url('assets/fonts/gilroy/Gilroy-ExtraBold.otf')  format('opentype'); }
+@font-face { font-family: 'WXAD-HYQiHei-70S'; src: url('//wxa.wxs.qq.com/adWeixin/main/assets/HYQiHei-70S-37622e5f.ttf') format('truetype'); font-display: swap; }
+@font-face { font-family: 'WXAD-HYQiHei-80S'; src: url('//wxa.wxs.qq.com/adWeixin/main/assets/HYQiHei-80S-8e118265.ttf') format('truetype'); font-display: swap; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  font-family: var(--wa-font-sans); font-weight: 500; color: var(--wa-gray-900);
+  background: var(--wa-gray-50); line-height: 1.6;
+}
+.container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+
+/* ═══════════════════ Hero ═══════════════════ */
+.page-hero {
+  background: var(--wa-gray-0);
+  border-bottom: 1px solid var(--wa-gray-200);
+  padding: 56px 0 44px;
+}
+.page-hero__inner { width: 100%; }
+/* 标题区限宽（保证可读性），但 Ribbon 撑满 inner */
+.page-hero__title-block { max-width: 880px; }
+.page-hero__kicker {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--wa-font-digit);
+  font-size: 11px; font-weight: 600; color: var(--wa-green);
+  background: var(--wa-green-soft); padding: 5px 10px 4px;
+  border-radius: 999px; letter-spacing: 0.06em;
+  line-height: 1; margin-bottom: 18px;
+}
+.page-hero__kicker svg { width: 11px; height: 11px; }
+.page-hero__title {
+  font-family: 'WXAD-HYQiHei-80S', var(--wa-font-sans);
+  font-size: 44px; font-weight: 800; letter-spacing: -0.01em;
+  line-height: 1.15; margin-bottom: 16px;
+}
+.page-hero__hl { color: var(--wa-green); }
+.page-hero__sub {
+  font-size: 16px; color: var(--wa-gray-800); line-height: 1.65;
+}
+.page-hero__meta {
+  display: flex; align-items: center; gap: 12px;
+  margin-top: 28px; padding-top: 20px;
+  border-top: 1px solid var(--wa-gray-100);
+}
+.page-hero__brand-logo { height: 22px; width: auto; display: block; }
+.page-hero__meta-divider { width: 1px; height: 14px; background: var(--wa-gray-300); }
+.page-hero__meta-text { font-size: 12px; color: var(--wa-gray-700); }
+.page-hero__meta-text strong { color: var(--wa-gray-900); font-weight: 600; }
+
+/* KPI Ribbon (启动信息) */
+.kickoff-ribbon {
+  background: var(--wa-gray-0);
+  border-radius: var(--wa-radius-card);
+  box-shadow: var(--wa-shadow-card);
+  padding: 26px 22px;
+  margin-top: 32px;
+  display: grid; grid-template-columns: repeat(6, 1fr);
+}
+.kickoff-ribbon__cell { padding: 0 12px; position: relative; }
+.kickoff-ribbon__cell + .kickoff-ribbon__cell::before {
+  content: ''; position: absolute; left: 0; top: 50%;
+  height: 56px; width: 1px; background: var(--wa-gray-200);
+  transform: translateY(-50%);
+}
+.kickoff-ribbon__label {
+  font-size: 11px; font-weight: 600; color: var(--wa-gray-700);
+  letter-spacing: 0.06em; margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: var(--wa-font-digit);
+}
+.kickoff-ribbon__value {
+  font-family: var(--wa-font-digit); font-weight: 700; font-size: 28px;
+  line-height: 1; letter-spacing: -0.02em; margin-bottom: 6px;
+}
+.kickoff-ribbon__value--green { color: var(--wa-green); }
+.kickoff-ribbon__value span { font-size: 14px; font-weight: 600; margin-left: 2px; color: var(--wa-gray-900); }
+.kickoff-ribbon__desc { font-size: 12px; color: var(--wa-gray-700); line-height: 1.5; }
+.kickoff-ribbon__desc strong { color: var(--wa-gray-900); font-weight: 700; }
+
+/* ═══════════════════ Section header ═══════════════════ */
+.sec { padding: 64px 0 0; }
+.sec__head { margin-bottom: 28px; }
+.sec__num {
+  font-family: var(--wa-font-digit); font-weight: 700; font-size: 40px;
+  color: var(--wa-green); line-height: 1; letter-spacing: -0.02em;
+  margin-right: 14px; vertical-align: -4px;
+}
+.sec__title { font-size: 26px; font-weight: 700; display: inline-block; letter-spacing: -0.005em; }
+.sec__sub { font-size: 14px; color: var(--wa-gray-700); margin-top: 8px; max-width: 760px; }
+
+/* ═══════════════════ Section 1 · 总览时间线（甘特泳道）═══════════════════ */
+.timeline-card {
+  background: var(--wa-gray-0);
+  border-radius: var(--wa-radius-card);
+  box-shadow: var(--wa-shadow-card);
+  padding: 32px 36px 28px;
+  overflow-x: auto;
+  position: relative;
+}
+.timeline {
+  display: grid;
+  /* 1 列泳道名 + 9 列月份 (7→3) */
+  grid-template-columns: 120px repeat(9, 1fr);
+  min-width: 1060px;
+  position: relative;
+}
+/* 全局纵向引导线：贯穿月份头下方到最后一行
+   做法：放在 .timeline-card 内、.timeline 外，靠 .timeline-card 的 relative 撑出全高。
+   `top` 跳过月份头（约 56px），左侧跳过泳道名列（120px + card padding 36px = 156px）。 */
+.timeline__guides {
+  position: absolute;
+  top: calc(32px + 56px);     /* card padding-top 32 + month-row 高度 56 */
+  bottom: 28px;               /* card padding-bottom */
+  left: calc(36px + 120px);   /* card padding-left 36 + 泳道名列 120 */
+  right: 36px;                /* card padding-right */
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  pointer-events: none;
+  z-index: 0;
+  min-width: calc(1060px - 156px - 36px);
+}
+.timeline__guides > span {
+  display: block;
+  border-left: 1px dashed var(--wa-gray-300);
+}
+.timeline__guides > span:first-child {
+  border-left: none;
+}
+/* 月份头部 */
+.timeline__month-row {
+  display: contents;
+}
+.timeline__lane-head {
+  font-size: 11px; font-weight: 600; color: var(--wa-gray-700);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding-bottom: 12px;
+  font-family: var(--wa-font-digit);
+}
+.timeline__month {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 0 4px 12px;
+  border-bottom: 2px solid var(--wa-gray-200);
+  position: relative;
+}
+.timeline__month-num {
+  font-family: var(--wa-font-digit); font-weight: 700; font-size: 20px;
+  color: var(--wa-gray-900); line-height: 1; letter-spacing: -0.02em;
+}
+.timeline__month-num span { font-size: 12px; font-weight: 600; margin-left: 2px; color: var(--wa-gray-700); }
+.timeline__month-year {
+  font-family: var(--wa-font-digit); font-size: 10px; font-weight: 500;
+  color: var(--wa-gray-700); margin-top: 4px; letter-spacing: 0.04em;
+}
+.timeline__month--year-flip .timeline__month-num { color: var(--wa-green); }
+.timeline__month--year-flip .timeline__month-year { color: var(--wa-green); font-weight: 700; }
+
+/* 泳道行 */
+.timeline__lane-name {
+  display: flex; align-items: center;
+  padding: 16px 0;
+  font-size: 13px; font-weight: 600; color: var(--wa-gray-900);
+  border-bottom: 1px solid var(--wa-gray-100);
+  background: var(--wa-gray-0);
+  z-index: 2; position: relative;
+}
+.timeline__lane-name::before {
+  content: ''; width: 3px; height: 14px; background: var(--wa-green);
+  border-radius: 2px; margin-right: 10px; flex-shrink: 0;
+}
+/* 整行 = 9 列子 grid，bar 放进去用 grid-column 跨格定位 */
+.timeline__lane-row {
+  grid-column: 2 / 11;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  position: relative;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--wa-gray-100);
+  min-height: 60px;
+  align-items: center;
+  z-index: 1;
+}
+.timeline__bar {
+  position: relative;
+  z-index: 1;
+  margin: 0 3px;
+  padding: 8px 12px;
+  background: var(--wa-green-soft);
+  border-radius: 6px;
+  font-size: 12px; font-weight: 600; color: var(--wa-green-deep);
+  line-height: 1.35;
+  min-height: 34px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.timeline__bar--key {
+  background: var(--wa-green);
+  color: #fff;
+}
+.timeline__bar--warn {
+  background: rgba(255,147,34,0.12);
+  color: #B05E10;
+}
+.timeline__bar--soft {
+  background: var(--wa-gray-100);
+  color: var(--wa-gray-800);
+}
+.timeline__bar--launch {
+  background: linear-gradient(135deg, #06AE56 0%, #07C160 100%);
+  color: #fff;
+}
+.timeline__bar-meta {
+  font-family: var(--wa-font-digit);
+  font-size: 10px; font-weight: 600;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+.timeline__milestone {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 700;
+  color: var(--wa-green);
+  padding: 4px 8px 3px;
+  background: var(--wa-gray-0);
+  border-radius: 999px;
+  box-shadow: 0 0 0 1.5px var(--wa-green);
+  line-height: 1;
+  z-index: 1; position: relative;
+  justify-self: start;
+  margin: 0 6px;
+  white-space: nowrap;
+}
+.timeline__milestone--launch {
+  color: #fff;
+  background: var(--wa-green);
+  box-shadow: 0 0 0 1.5px var(--wa-green), 0 4px 10px rgba(7,193,96,0.30);
+}
+.timeline__milestone--report {
+  color: #B05E10;
+  background: #fff;
+  box-shadow: 0 0 0 1.5px var(--wa-orange), 0 4px 10px rgba(255,147,34,0.20);
+  padding: 4px 9px 3px 6px;
+}
+.timeline__milestone svg { width: 11px; height: 11px; }
+.timeline__milestone-emoji {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  margin-right: 1px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.06));
+}
+/* 图例 */
+.timeline-legend {
+  display: flex; flex-wrap: wrap; gap: 18px; margin-top: 22px;
+  padding-top: 18px; border-top: 1px solid var(--wa-gray-100);
+  font-size: 12px; color: var(--wa-gray-700);
+}
+.timeline-legend__item { display: inline-flex; align-items: center; gap: 8px; }
+.timeline-legend__swatch {
+  width: 18px; height: 12px; border-radius: 3px; flex-shrink: 0;
+}
+.timeline-legend__swatch--key { background: var(--wa-green); }
+.timeline-legend__swatch--soft { background: var(--wa-green-soft); }
+.timeline-legend__swatch--warn { background: rgba(255,147,34,0.12); }
+.timeline-legend__swatch--gray { background: var(--wa-gray-100); }
+.timeline-legend__swatch--launch {
+  background: var(--wa-gray-0);
+  box-shadow: inset 0 0 0 1.5px var(--wa-green);
+  border-radius: 999px; width: 14px; height: 14px;
+}
+
+/* ═══════════════════ Section 2 · 日历视图 ═══════════════════ */
+.cal-stack { display: flex; flex-direction: column; gap: 20px; }
+
+.cal-row {
+  background: var(--wa-gray-0);
+  border-radius: var(--wa-radius-card);
+  box-shadow: var(--wa-shadow-card);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  overflow: hidden;
+}
+.cal-row__month {
+  background: var(--wa-gray-50);
+  padding: 24px 24px 20px;
+  border-right: 1px solid var(--wa-gray-100);
+  display: flex; flex-direction: column;
+}
+.cal-row__month-num {
+  font-family: var(--wa-font-digit); font-weight: 800; font-size: 48px;
+  color: var(--wa-green); line-height: 0.9; letter-spacing: -0.02em;
+}
+.cal-row__month-num span {
+  font-size: 16px; font-weight: 700; color: var(--wa-gray-900);
+  margin-left: 4px;
+}
+.cal-row__month-zh {
+  font-family: 'WXAD-HYQiHei-80S', var(--wa-font-sans);
+  font-size: 14px; font-weight: 700; color: var(--wa-gray-900);
+  margin-top: 6px; letter-spacing: 0.02em;
+}
+.cal-row__month-tag {
+  display: inline-flex; align-items: center;
+  font-size: 11px; font-weight: 600; color: var(--wa-green);
+  background: var(--wa-green-soft); padding: 4px 8px;
+  border-radius: var(--wa-radius-tag);
+  margin-top: 14px; align-self: flex-start;
+  line-height: 1;
+}
+.cal-row__month-tag--launch {
+  color: #fff; background: var(--wa-green);
+}
+.cal-row__month-tag--warn {
+  color: #B05E10; background: rgba(255,147,34,0.12);
+}
+.cal-row__focus {
+  margin-top: auto; padding-top: 16px;
+  font-size: 12px; color: var(--wa-gray-800); line-height: 1.55;
+}
+.cal-row__focus strong { color: var(--wa-gray-900); font-weight: 700; }
+
+.cal-row__body {
+  padding: 22px 26px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.cal-role { display: flex; flex-direction: column; }
+.cal-role__head {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 700; color: var(--wa-gray-900);
+  letter-spacing: 0.04em; margin-bottom: 12px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--wa-gray-100);
+}
+.cal-role__head-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.cal-role__head-dot--prd { background: var(--wa-green); }       /* 产品 = 品牌绿 */
+.cal-role__head-dot--design { background: #6467F0; }            /* 设计 = 紫 */
+.cal-role__head-dot--ops { background: var(--wa-orange); }      /* 运营 = 橙 */
+.cal-role__head-dot--dev { background: var(--wa-link); }        /* 研发 = 蓝 */
+.cal-role__list {
+  display: flex; flex-direction: column; gap: 8px;
+  list-style: none;
+}
+.cal-role__list li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 13px; color: var(--wa-gray-800); line-height: 1.5;
+}
+.cal-role__list li::before {
+  content: ''; position: absolute; left: 0; top: 9px;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--wa-green);
+}
+.cal-role__list li strong { color: var(--wa-gray-900); font-weight: 700; }
+.cal-role__list li em {
+  font-style: normal; color: var(--wa-red); font-weight: 700;
+}
+
+/* ═══════════════════ Section 3 · 下一关键节点 ═══════════════════ */
+.next {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+}
+.next-hero {
+  background: linear-gradient(135deg, #06AE56 0%, #07C160 55%, #5AD892 100%);
+  border-radius: var(--wa-radius-card);
+  box-shadow: 0 12px 32px rgba(7,193,96,0.18);
+  padding: 32px 36px;
+  color: #fff;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+.next-hero::after {
+  content: ''; position: absolute;
+  right: -40px; bottom: -40px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+.next-hero__kicker {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--wa-font-digit);
+  font-size: 11px; font-weight: 700;
+  color: #fff;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  padding: 5px 10px 4px;
+  border-radius: 999px;
+  letter-spacing: 0.08em; line-height: 1;
+  align-self: flex-start;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  position: relative; z-index: 1;
+}
+.next-hero__kicker svg { width: 11px; height: 11px; }
+.next-hero__title {
+  font-family: 'WXAD-HYQiHei-80S', var(--wa-font-sans);
+  font-size: 30px; font-weight: 800; line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin-bottom: 8px;
+  position: relative; z-index: 1;
+}
+.next-hero__date-row {
+  display: flex; align-items: baseline; gap: 14px;
+  margin: 18px 0 10px;
+  position: relative; z-index: 1;
+}
+.next-hero__date {
+  font-family: var(--wa-font-digit);
+  font-size: 56px; font-weight: 800; line-height: 1;
+  letter-spacing: -0.02em;
+}
+.next-hero__date span { font-size: 22px; font-weight: 700; margin-left: 4px; }
+.next-hero__countdown {
+  font-family: var(--wa-font-digit);
+  font-size: 13px; font-weight: 600;
+  background: rgba(255,255,255,0.22);
+  padding: 6px 12px 5px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+.next-hero__desc {
+  font-size: 14px; line-height: 1.7;
+  opacity: 0.95; max-width: 460px;
+  position: relative; z-index: 1;
+  margin-top: 6px;
+}
+.next-hero__owners {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.22);
+  position: relative; z-index: 1;
+}
+.next-hero__owner {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 600;
+  background: rgba(255,255,255,0.18);
+  padding: 5px 10px 4px;
+  border-radius: 999px;
+  line-height: 1;
+}
+
+/* 右侧 todo 卡片 */
+.next-todo {
+  background: var(--wa-gray-0);
+  border-radius: var(--wa-radius-card);
+  box-shadow: var(--wa-shadow-card);
+  padding: 26px 28px;
+  display: flex; flex-direction: column;
+}
+.next-todo__head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 6px;
+}
+.next-todo__title {
+  font-size: 16px; font-weight: 700; color: var(--wa-gray-900);
+}
+.next-todo__count {
+  font-family: var(--wa-font-digit);
+  font-size: 11px; font-weight: 600; color: var(--wa-green);
+  background: var(--wa-green-soft);
+  padding: 4px 8px 3px;
+  border-radius: 999px;
+  line-height: 1;
+}
+.next-todo__sub {
+  font-size: 12px; color: var(--wa-gray-700);
+  margin-bottom: 18px;
+}
+.next-todo__list {
+  display: flex; flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+.next-todo__list li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--wa-gray-100);
+}
+.next-todo__list li:last-child { border-bottom: none; }
+.next-todo__date {
+  font-family: var(--wa-font-digit);
+  font-size: 16px; font-weight: 700; color: var(--wa-green);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.next-todo__date span {
+  display: block;
+  font-size: 10px; font-weight: 600; color: var(--wa-gray-700);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+.next-todo__what {
+  font-size: 13px; font-weight: 600; color: var(--wa-gray-900);
+  line-height: 1.5;
+}
+.next-todo__what span {
+  display: block;
+  font-size: 12px; font-weight: 500; color: var(--wa-gray-700);
+  margin-top: 4px;
+}
+
+/* ═══════════════════ Footer ═══════════════════ */
+.page-footer {
+  margin-top: 80px;
+  padding: 28px 0 36px;
+  border-top: 1px solid var(--wa-gray-200);
+}
+.page-footer__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.page-footer__brand-logo { height: 24px; width: auto; }
+.page-footer__text { font-size: 12px; color: var(--wa-gray-700); }
+
+@media (max-width: 980px) {
+  .kickoff-ribbon { grid-template-columns: repeat(2, 1fr); gap: 18px 0; }
+  .kickoff-ribbon__cell + .kickoff-ribbon__cell::before { display: none; }
+  .cal-row { grid-template-columns: 1fr; }
+  .cal-row__month { border-right: none; border-bottom: 1px solid var(--wa-gray-100); }
+  .cal-row__body { grid-template-columns: 1fr; }
+  .next { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════ Hero ════════════ -->
+<header class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="page-hero__title-block">
+        <span class="page-hero__kicker">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          2027 CNY · KICK-OFF
+        </span>
+        <h1 class="page-hero__title">
+          2027 CNY 项目<br>关键节点 · <span class="page-hero__hl">时间线</span>
+        </h1>
+        <p class="page-hero__sub">
+          微信广告年度重点招商项目 —— 用新功能、新玩法争取品牌大客户的春节大额预算。从脑暴、定稿、招商、开发，到除夕当晚的表情雨首发，全链路时间一屏看清。
+        </p>
+        <div class="page-hero__meta">
+          <img class="page-hero__brand-logo" src="assets/brand-logos/wechat-marketing-lockup.svg" alt="微信营销">
+          <span class="page-hero__meta-divider"></span>
+          <span class="page-hero__meta-text">启动会：<strong>2026 年 6 月 30 日</strong>　·　除夕：<strong>2027 年 2 月 6 日</strong></span>
+        </div>
+      </div>
+
+      <!-- 关键时间点 Ribbon -->
+      <div class="kickoff-ribbon">
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">REPORT 🐲</div>
+          <div class="kickoff-ribbon__value kickoff-ribbon__value--green">8<span>月底</span></div>
+          <div class="kickoff-ribbon__desc">完成对 <strong style="font-size:14px">🐲</strong> 的汇报<br>方案定稿关键节点</div>
+        </div>
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">REVIEW</div>
+          <div class="kickoff-ribbon__value">9<span>月起</span></div>
+          <div class="kickoff-ribbon__desc">陆续启动<br>需求评审</div>
+        </div>
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">SALES</div>
+          <div class="kickoff-ribbon__value">10<span>月中下</span></div>
+          <div class="kickoff-ribbon__desc">对外招商<br>正式启动</div>
+        </div>
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">FIRST LAUNCH</div>
+          <div class="kickoff-ribbon__value kickoff-ribbon__value--green">12/1<span></span></div>
+          <div class="kickoff-ribbon__desc">首个新形态<br>正式上线</div>
+        </div>
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">ROLLOUT</div>
+          <div class="kickoff-ribbon__value kickoff-ribbon__value--green">1/7<span> 起</span></div>
+          <div class="kickoff-ribbon__desc">其它形态<br>陆续上线</div>
+        </div>
+        <div class="kickoff-ribbon__cell">
+          <div class="kickoff-ribbon__label">CNY EVE</div>
+          <div class="kickoff-ribbon__value kickoff-ribbon__value--green">2/6<span> 除夕</span></div>
+          <div class="kickoff-ribbon__desc">表情雨<br>正式上线</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════ Section 01 · 总览时间线 ════════════ -->
+<section class="sec">
+  <div class="container">
+    <div class="sec__head">
+      <span class="sec__num">01</span>
+      <h2 class="sec__title">总览时间线 · 7 个阶段贯通 9 个月</h2>
+      <p class="sec__sub">按业务阶段拆分泳道，自启动会起至除夕表情雨上线，覆盖提案、需求、招商、开发、上线五个并行/串行节奏。</p>
+    </div>
+
+    <div class="timeline-card">
+      <!-- 全局纵向引导线 overlay：贯穿月份头下方至最后一行 -->
+      <div class="timeline__guides" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="timeline">
+        <!-- 月份头 -->
+        <div class="timeline__month-row">
+          <span class="timeline__lane-head">阶段 / 月份</span>
+          <div class="timeline__month">
+            <span class="timeline__month-num">7<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">8<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">9<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">10<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">11<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">12<span>月</span></span>
+            <span class="timeline__month-year">2026</span>
+          </div>
+          <div class="timeline__month timeline__month--year-flip">
+            <span class="timeline__month-num">1<span>月</span></span>
+            <span class="timeline__month-year">2027</span>
+          </div>
+          <div class="timeline__month timeline__month--year-flip">
+            <span class="timeline__month-num">2<span>月</span></span>
+            <span class="timeline__month-year">除夕 2/6</span>
+          </div>
+          <div class="timeline__month">
+            <span class="timeline__month-num">3<span>月</span></span>
+            <span class="timeline__month-year">复盘</span>
+          </div>
+        </div>
+
+        <!-- 月份格 = 1..9 对应 7/8/9/10/11/12/1/2/3 月。bar 的 grid-column 写法：
+             1 起点 (7月) → 9 终点 (3月)，跨 N 月就用 start / end。 -->
+
+        <!-- 泳道 1：方案提案 (7-8月) -->
+        <span class="timeline__lane-name">方案 提案</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar" style="grid-column: 1 / 3;">
+            脑暴 · 汇报 · 定稿
+            <span class="timeline__bar-meta">7 月 – 8 月底 · ≥ 1 个月</span>
+          </div>
+          <span class="timeline__milestone timeline__milestone--report" style="grid-column: 2 / 3; justify-self: end; align-self: center; margin-right: 6px;">
+            <span class="timeline__milestone-emoji" aria-label="张小龙">🐲</span>
+            8/最后一周 · 完成汇报
+          </span>
+        </div>
+
+        <!-- 泳道 2：可行性评估 (8月) -->
+        <span class="timeline__lane-name">可行性 评估</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar timeline__bar--soft" style="grid-column: 2 / 3;">
+            售卖可行性评估
+            <span class="timeline__bar-meta">8 月 · 与汇报并行</span>
+          </div>
+        </div>
+
+        <!-- 泳道 3：需求评审 (9-10月) -->
+        <span class="timeline__lane-name">需求 评审</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar" style="grid-column: 3 / 4;">
+            分模块需求评审
+            <span class="timeline__bar-meta">9 月陆续启动</span>
+          </div>
+          <div class="timeline__bar timeline__bar--warn" style="grid-column: 4 / 5;">
+            全链路评审
+            <span class="timeline__bar-meta">10 月下旬完成</span>
+          </div>
+        </div>
+
+        <!-- 泳道 4：对外招商 (9月底准备 + 10-12月正式) -->
+        <span class="timeline__lane-name">对外 招商</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar timeline__bar--soft" style="grid-column: 3 / 4;">
+            招商方案准备
+            <span class="timeline__bar-meta">9 月底起</span>
+          </div>
+          <div class="timeline__bar timeline__bar--key" style="grid-column: 4 / 7;">
+            对外宣讲 · 启动招商 · 商机确认
+            <span class="timeline__bar-meta">10 月中旬启动 · 持续至 12 月</span>
+          </div>
+        </div>
+
+        <!-- 泳道 5：需求开发 (9月中起 → 1月中) -->
+        <span class="timeline__lane-name">需求 开发</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar" style="grid-column: 3 / 8; margin-left: 50%;">
+            各方案 需求开发 + 测试 + 串测
+            <span class="timeline__bar-meta">9 月中起 · 与招商并行 · 首发前需完成首批</span>
+          </div>
+        </div>
+
+        <!-- 泳道 6：分批上线 (12/1 首发 → 1/5–2/5 → 2/6 除夕) -->
+        <span class="timeline__lane-name">分批 上线</span>
+        <div class="timeline__lane-row">
+          <span class="timeline__milestone" style="grid-column: 6 / 7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l5.5 5.5L22 5"/></svg>
+            12/1 首发
+          </span>
+          <div class="timeline__bar timeline__bar--launch" style="grid-column: 7 / 8;">
+            其它新形态 陆续上线
+            <span class="timeline__bar-meta">除夕前 2 周起 · 1/5 → 2/5</span>
+          </div>
+          <span class="timeline__milestone timeline__milestone--launch" style="grid-column: 8 / 9;">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+            2/6 表情雨
+          </span>
+        </div>
+
+        <!-- 泳道 7：复盘 (3月) -->
+        <span class="timeline__lane-name">项目 复盘</span>
+        <div class="timeline__lane-row">
+          <div class="timeline__bar timeline__bar--soft" style="grid-column: 9 / 10;">
+            数据 · 客户 · 流程复盘
+            <span class="timeline__bar-meta">3 月</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 图例 -->
+      <div class="timeline-legend">
+        <span class="timeline-legend__item">
+          <span class="timeline-legend__swatch timeline-legend__swatch--soft"></span>
+          常规阶段（绿 soft）
+        </span>
+        <span class="timeline-legend__item">
+          <span class="timeline-legend__swatch timeline-legend__swatch--key"></span>
+          关键阶段（招商 / 开发）
+        </span>
+        <span class="timeline-legend__item">
+          <span class="timeline-legend__swatch timeline-legend__swatch--warn"></span>
+          截止 deadline（10 月下完成全链路评审）
+        </span>
+        <span class="timeline-legend__item">
+          <span class="timeline-legend__swatch timeline-legend__swatch--gray"></span>
+          辅助 / 准备阶段
+        </span>
+        <span class="timeline-legend__item">
+          <span class="timeline-legend__swatch timeline-legend__swatch--launch"></span>
+          上线里程碑
+        </span>
+        <span class="timeline-legend__item">
+          <span style="font-size: 14px; line-height: 1;">🐲</span>
+          对张小龙汇报关键节点
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ Section 02 · 日历视图 ════════════ -->
+<section class="sec">
+  <div class="container">
+    <div class="sec__head">
+      <span class="sec__num">02</span>
+      <h2 class="sec__title">日历视图 · 月重点 × 分角色 ToDo</h2>
+      <p class="sec__sub">按月切片，每行左侧为当月主线，右侧为产品 / 研发 / 招商 三条线的关键任务，便于团队各角色对齐节奏。</p>
+    </div>
+
+    <div class="cal-stack">
+      <!-- 7 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">07<span>/2026</span></div>
+          <div class="cal-row__month-zh">脑暴启动</div>
+          <span class="cal-row__month-tag">月初启动</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>项目启动会后全员贡献脑暴 idea，输出方向白板初稿。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li><strong>梳理时间线</strong>，列出关键时间节点</li>
+              <li>主持脑暴并推动 idea 收敛</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li><strong>拉通各组</strong>收集脑暴 idea</li>
+              <li><strong>输出方向白板初稿</strong> · 收敛重点方向</li>
+              <li>调研竞品 · 收集行业视觉标杆</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li><strong>项目启动会</strong>（6/30）信息同步全员</li>
+              <li>调研重点客户对 CNY 的预算意向</li>
+              <li>沉淀 2026 CNY 售卖复盘要点</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li style="color: var(--wa-gray-600);">本阶段暂不介入</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">08<span>/2026</span></div>
+          <div class="cal-row__month-zh">完成对 <span style="font-size:18px">🐲</span> 的汇报</div>
+          <span class="cal-row__month-tag cal-row__month-tag--warn">8 月最后一周</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>方案多轮内部汇报与修改 · <em style="color:var(--wa-red);font-style:normal;font-weight:700">8 月最后一周完成对 🐲 的汇报</em>·  储备方案定稿。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li><strong>方案汇报与修改</strong>（多轮）</li>
+              <li><strong>8 月最后一周完成对 🐲 的汇报</strong></li>
+              <li>储备方案 PRD 一稿输出</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li><strong>方案 demo 输出</strong>（视觉 · 交互）</li>
+              <li>关键样式定稿</li>
+              <li>对外宣讲材料的视觉雏形</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li><strong>方案售卖可行性评估</strong>（与汇报并行）</li>
+              <li>客户前置沟通 · 收集初步意向</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li style="color: var(--wa-gray-600);">本阶段暂不介入</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">09<span>/2026</span></div>
+          <div class="cal-row__month-zh">需求评审 · 研发介入</div>
+          <span class="cal-row__month-tag">研发起跑</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>分模块需求评审陆续启动 · 9 月中旬研发介入，为首发方案预留充足开发期。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li>PRD 定稿 · 推动各模块需求评审</li>
+              <li>确认开发模块 · 分工 · 排期</li>
+              <li>跟进首发方案的研发启动</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>全部方案视觉 · 交互定稿</li>
+              <li><strong>对外材料输出</strong>（招商 deck · 客户案例图）</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li><strong>招商方案筹备</strong>（PPT · 报价 · 案例库）</li>
+              <li>意向客户进入深度沟通</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li><strong>9 月中旬正式介入</strong></li>
+              <li>首发方案启动开发（保 11 月底上线）</li>
+              <li>技术方案选型 · 模块拆分</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">10<span>/2026</span></div>
+          <div class="cal-row__month-zh">招商启动 · 全链路评审</div>
+          <span class="cal-row__month-tag cal-row__month-tag--warn">10 月下截止</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>10 月下完成全链路评审 · 10 月中下旬对外招商正式启动 · 开发持续推进。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li>所有方案<em>需在 10 月下完成全链路评审</em></li>
+              <li>明确各方案首发上线时间</li>
+              <li>跟进开发进度 · 配合招商提供需求素材</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>开发所需物料 · 模板定稿输出</li>
+              <li>持续输出招商对外材料</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li><strong>10 月中下旬启动对外招商</strong></li>
+              <li>客户引入 · 报价签约</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li>首发方案进入冲刺开发</li>
+              <li>其它方案陆续启动开发</li>
+              <li>输出研发侧甘特图</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">11<span>/2026</span></div>
+          <div class="cal-row__month-zh">开发冲刺 · 首发就绪</div>
+          <span class="cal-row__month-tag">三线并行</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>首发方案完成测试就绪 · 招商进入冲刺 · 后续方案开发持续推进。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li>首发方案上线前最后确认</li>
+              <li>跟进测试 · 客户素材预审环节</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>设计走查 · 还原度验收</li>
+              <li><strong>各方案 MR 输出节点跟进</strong></li>
+              <li>对外客户素材规范输出</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li>对外招商宣讲 · 商机确认</li>
+              <li>引入客户 · 完成关键签约</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li><strong>首发方案测试就绪</strong>（保 12/1 上线）</li>
+              <li>后续方案进入测试阶段</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">12<span>/2026</span></div>
+          <div class="cal-row__month-zh">首发上线</div>
+          <span class="cal-row__month-tag cal-row__month-tag--launch">12/1 首发</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>12/1 首个新形态正式上线 · 后续方案陆续进入测试 · 招商签约冲刺。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li><strong>12/1 首发新形态正式上线</strong></li>
+              <li>跟进首发数据 · 客户反馈</li>
+              <li>持续跟进后续方案上线节奏</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>首发素材审查 · 客户素材验收</li>
+              <li>春节专属视觉物料输出</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li>各方案 MR 输出 · 客户签约冲刺</li>
+              <li>跟进首发上线的客户引入营销动作</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li><em>客户端版本发布</em>（保障春节窗口期）</li>
+              <li>后续方案陆续进入测试</li>
+              <li>稳定性 · 性能压测</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">01<span>/2027</span></div>
+          <div class="cal-row__month-zh">陆续上线</div>
+          <span class="cal-row__month-tag cal-row__month-tag--launch">1/7 起</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>1/7 起其它新形态陆续上线 · 现网串测 + 边阵测试 · 客户素材最终交付。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li>跟进后续形态 1/7 起的陆续上线</li>
+              <li>表情雨方案最终确认</li>
+              <li>客户素材预审 · 最晚交付节点把关</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>春节素材最终交付</li>
+              <li>表情雨视觉验收</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li>客户陪跑 · 走完<em>最终素材交付</em>节点</li>
+              <li>商机收尾 · 跟进投放数据</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li><strong>上线保障</strong>（现网串测 · 应急预案 · 值守）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 月 -->
+      <div class="cal-row">
+        <div class="cal-row__month">
+          <div class="cal-row__month-num">02<span>/2027</span></div>
+          <div class="cal-row__month-zh">表情雨上线</div>
+          <span class="cal-row__month-tag cal-row__month-tag--launch">2/6 除夕</span>
+          <p class="cal-row__focus"><strong>当月重点：</strong>2/6 表情雨正式上线 · 全员保障春节流量峰值 · 客户陪跑。</p>
+        </div>
+        <div class="cal-row__body">
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--prd"></span>产品</div>
+            <ul class="cal-role__list">
+              <li><strong>2/6 表情雨正式上线</strong></li>
+              <li>春节投放数据实时追踪</li>
+              <li>客户反馈收集 · 异常处理</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--design"></span>设计</div>
+            <ul class="cal-role__list">
+              <li>春节投放视觉实时跟进</li>
+              <li>问题素材应急处理</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--ops"></span>运营</div>
+            <ul class="cal-role__list">
+              <li>客户陪跑 · 实时投放反馈</li>
+              <li>春节品牌客户沟通日报</li>
+            </ul>
+          </div>
+          <div class="cal-role">
+            <div class="cal-role__head"><span class="cal-role__head-dot cal-role__head-dot--dev"></span>研发</div>
+            <ul class="cal-role__list">
+              <li>峰值监控 · 故障应急响应</li>
+              <li>日志归档 · 数据回流</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ Section 03 · 下一关键节点 ════════════ -->
+<section class="sec">
+  <div class="container">
+    <div class="sec__head">
+      <span class="sec__num">03</span>
+      <h2 class="sec__title">下一个关键时间点 · 启动后 30 天</h2>
+      <p class="sec__sub">启动会后到第一个 deadline 的过渡期 —— 谁来推、推什么、什么时候交。</p>
+    </div>
+
+    <div class="next">
+      <!-- 左：下个关键节点 Hero -->
+      <article class="next-hero">
+        <span class="next-hero__kicker">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          NEXT MILESTONE
+        </span>
+        <h3 class="next-hero__title">全员脑暴 · 贡献你的 CNY idea</h3>
+        <div class="next-hero__date-row">
+          <span class="next-hero__date">7/7<span></span></span>
+          <span class="next-hero__countdown">距启动会 +7 天</span>
+        </div>
+        <p class="next-hero__desc">
+          所有人在第一周内提交至少一个 CNY 创意 idea —— 不限模块、不限粒度，鼓励跨场景、跨玩法。围绕「样式新 · 场景新 · 玩法新」三个方向，先发散再收敛，为后续方案孵化储备底料。
+        </p>
+        <div class="next-hero__owners">
+          <span class="next-hero__owner">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg>
+            全员参与
+          </span>
+          <span class="next-hero__owner">产品</span>
+          <span class="next-hero__owner">设计</span>
+          <span class="next-hero__owner">运营</span>
+          <span class="next-hero__owner">研发</span>
+        </div>
+      </article>
+
+      <!-- 右：未来 30 天 todo -->
+      <aside class="next-todo">
+        <div class="next-todo__head">
+          <span class="next-todo__title">未来 30 天 To-Do</span>
+          <span class="next-todo__count">每周 1 个关键成果</span>
+        </div>
+        <p class="next-todo__sub">从 7/7 全员脑暴起，每周一次收敛 · 一次产出，目标 <strong style="color:var(--wa-gray-900)">8 月最后一周完成对 🐲 的汇报</strong>。</p>
+        <ul class="next-todo__list">
+          <li>
+            <div class="next-todo__date">W1<span>07/07</span></div>
+            <div class="next-todo__what">
+              全员贡献脑暴 idea
+              <span>每人 ≥ 1 个 idea，自由提交至共享白板；7/10 召开收敛会</span>
+            </div>
+          </li>
+          <li>
+            <div class="next-todo__date">W2<span>07/14</span></div>
+            <div class="next-todo__what">
+              方向白板 · 收敛重点方向
+              <span>从 idea 池筛出重点方向，每个方向给出一句话主张</span>
+            </div>
+          </li>
+          <li>
+            <div class="next-todo__date">W3<span>07/21</span></div>
+            <div class="next-todo__what">
+              方案细化 · 内部预评审
+              <span>补齐「样式 · 场景 · 售卖逻辑 · 技术可行性」四要素</span>
+            </div>
+          </li>
+          <li>
+            <div class="next-todo__date">W4<span>07/28</span></div>
+            <div class="next-todo__what">
+              方案 PPT 初稿 · 准备首轮汇报
+              <span>设计同步出 demo 雏形 · 运营同步出可行性结论</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ Footer ════════════ -->
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__inner">
+      <img class="page-footer__brand-logo" src="assets/brand-logos/wechat-marketing-lockup.svg" alt="微信营销">
+      <span class="page-footer__text">© 2026 微信营销 · 2027 CNY 项目组 · 启动会内部用</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
