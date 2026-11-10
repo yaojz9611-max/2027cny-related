@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>问小微 · 配置演示</title>
+<style>
+:root{--green:#07c160;--ink:#1f1f1f;--muted:#72777a;--line:#e7eae8;--soft:#f0faf4}
+*{box-sizing:border-box}body{margin:0;background:#f7f9f8;color:var(--ink);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}
+header{height:56px;background:#fff;border-bottom:1px solid var(--line)}.header-inner{height:100%;max-width:1108px;padding:0 24px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:600;display:flex;align-items:center;gap:12px}.demo{font-size:12px;color:#16824c;background:var(--soft);border:1px solid #d5eddf;border-radius:4px;padding:2px 7px}.example{background:white;border:1px solid #dce3df;border-radius:6px;padding:6px 13px;color:#3f4843}.example:hover{background:var(--soft);border-color:var(--green)}
+main{max-width:1108px;margin:0 auto;padding:24px}.heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:16px}h1{font-size:22px;line-height:32px;margin:0;font-weight:600;letter-spacing:.2px}.asset{font-size:12px;color:var(--muted)}.form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 24px;box-shadow:0 2px 8px #142d2010}
+.section{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}.section:last-child{border-bottom:0}.section-title{font-size:15px;font-weight:600;margin:0 0 5px}.section-caption{margin:0;color:var(--muted);font-size:12px;line-height:19px}.control{min-width:0}textarea,input{width:100%;border:1px solid #dce2de;border-radius:6px;background:#fff;padding:10px 12px;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}textarea:focus,input:focus{border-color:var(--green);box-shadow:0 0 0 3px #07c16014}textarea::placeholder,input::placeholder{color:#969e99}textarea{display:block;resize:vertical;min-height:64px;height:64px}#context{height:80px;min-height:80px}#cid,.scenario-extra input,.follow-row input{height:38px;padding:7px 12px}
+.intents{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.intent{padding:11px 6px;border:1px solid #dce2de;border-radius:6px;background:#fff;color:#505953;font-size:14px;white-space:nowrap}.intent:hover{border-color:#8cd9b1}.intent.active{border-color:var(--green);color:#078342;background:var(--soft);box-shadow:inset 0 0 0 .5px var(--green)}.hint{font-size:12px;color:var(--muted);margin:7px 0 0;min-height:18px}.hint.is-error{color:#c2573a}.hint.note{margin:4px 0 0;min-height:0}.context-foot{display:flex;justify-content:space-between;align-items:flex-start;gap:8px 12px;flex-wrap:wrap}.char-count{flex:none;margin:7px 0 0;font-size:12px;line-height:18px;color:#9aa39e;font-variant-numeric:tabular-nums}.char-count.is-limit{color:#505953}.followups{display:grid;gap:8px}.follow-row{display:grid;grid-template-columns:20px 1fr;gap:8px;align-items:center}.follow-row span{font-size:12px;color:#9aa39e;text-align:center}.footer{margin:12px 2px 0;color:#8a938e;font-size:12px;display:flex;justify-content:space-between;gap:16px}.status{color:#078342}
+.scenario-extra{margin-top:14px}.scenario-extra[hidden]{display:none}.extra-field+.extra-field{margin-top:12px}.extra-label{display:block;font-size:13px;font-weight:600;margin:0 0 6px}.product-list{display:grid;gap:8px;margin-top:8px}.product-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}.btn-add,.btn-del{height:32px;padding:0 10px;border-radius:6px;border:1px solid #dce3df;background:#fff;color:#3f4843;font-size:13px;white-space:nowrap}.btn-add{margin-top:8px}.btn-add:hover,.btn-del:hover{background:var(--soft);border-color:var(--green)}
+@media(max-width:760px){main{padding:16px}.heading{display:block}.asset{margin-top:5px}.form{padding:0 16px}.section{grid-template-columns:1fr;gap:10px;padding:16px 0}.intents{grid-template-columns:repeat(2,1fr)}.footer{display:block}.header-inner{padding:0 16px}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><div class="brand">问小微<span class="demo">交互演示</span></div><button class="example" type="button" id="fillExample">填入示例</button></div></header>
+<main>
+<div class="heading"><h1>朋友圈广告 · 问小微配置</h1><div class="asset">预置示例资产：岚程户外 · 轻暖冲锋衣</div></div>
+<div class="form">
+<section class="section">
+<div><h2 class="section-title"><label for="cid">cid</label></h2><p class="section-caption">用于关联小微组件与广告主广告。</p></div>
+<div class="control"><input id="cid" type="text" inputmode="numeric" autocomplete="off" aria-describedby="cidHint" aria-invalid="false" placeholder="输入 cid"><p class="hint" id="cidHint"></p></div>
+</section>
+<section class="section">
+<div><h2 class="section-title"><label for="firstQuestion">1. 输入自定义问题</label></h2><p class="section-caption">用户首问文案，自由编辑。</p></div>
+<div class="control"><textarea id="firstQuestion" placeholder="输入用户想问小微的问题"></textarea></div>
+</section>
+<section class="section">
+<div><h2 class="section-title" id="scenarioLabel">2. 使用场景</h2></div>
+<div class="control">
+<div class="intents" role="group" aria-labelledby="scenarioLabel">
+<button type="button" class="intent active" data-scenario="shop" aria-pressed="true">推荐小店商品</button>
+<button type="button" class="intent" data-scenario="service" aria-pressed="false">推荐小程序服务</button>
+</div>
+<div class="scenario-extra" id="shopFields">
+<div class="extra-field">
+<label class="extra-label" for="shopId">小店id</label>
+<input id="shopId" type="text" autocomplete="off" placeholder="输入小店id">
+</div>
+<div class="extra-field">
+<div class="extra-label" id="productIdsLabel">小店商品id</div>
+<p class="hint note">按照填写顺序，优先向用户推荐排序靠前的商品</p>
+<div class="product-list" id="productIdList" role="group" aria-labelledby="productIdsLabel"></div>
+<button type="button" class="btn-add" id="addProduct">添加商品</button>
+</div>
+</div>
+<div class="scenario-extra" id="serviceFields" hidden>
+<div class="extra-field">
+<label class="extra-label" for="appid">appid</label>
+<input id="appid" type="text" autocomplete="off" placeholder="输入 appid">
+</div>
+<div class="extra-field">
+<label class="extra-label" for="pagePath">页面路径/功能接口</label>
+<input id="pagePath" type="text" autocomplete="off" placeholder="输入页面路径/功能接口">
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div><h2 class="section-title"><label for="context">3. 补充上下文信息（可选）</label></h2><p class="section-caption">为小微回答提供补充信息。<br>仅支持输入文本，不超过200字。</p></div>
+<div class="control"><textarea id="context" maxlength="200" placeholder="可补充希望小微参考的商品信息"></textarea><div class="context-foot"><p class="hint" id="contextHint">选填，用于补充商品相关上下文。</p><span class="char-count" id="contextCount">0/200</span></div></div>
+</section>
+<section class="section">
+<div><h2 class="section-title">4. 建议追问</h2><p class="section-caption">编辑首答后的建议问题。<br>后续会话不受广告干预。</p></div>
+<div class="control followups">
+<label class="follow-row"><span aria-hidden="true">01</span><input id="followUp1" aria-label="建议追问一" placeholder="输入建议追问"></label>
+<label class="follow-row"><span aria-hidden="true">02</span><input id="followUp2" aria-label="建议追问二" placeholder="输入建议追问"></label>
+<label class="follow-row"><span aria-hidden="true">03</span><input id="followUp3" aria-label="建议追问三" placeholder="输入建议追问"></label>
+</div>
+</section>
+</div>
+<div class="footer"><span>示例数据 · 非官方操作平台 · 不接真实服务，不提交广告</span><span class="status" id="status" role="status" aria-live="polite"></span></div>
+</main>
+<script>
+(function(){
+'use strict';
+const CID_PATTERN=/^[0-9]+$/;
+const CID_ERROR='cid仅支持数字，请检查输入';
+const state={
+ activeScenario:'shop',
+ cid:'',
+ firstQuestion:'',
+ context:'',
+ followUps:['','',''],
+ shopId:'',
+ productIds:[''],
+ appid:'',
+ pagePath:''
+};
+const scenarioHints={
+ shop:{placeholder:'可补充希望小微参考的商品信息',hint:'选填，用于补充商品相关上下文。'},
+ service:{placeholder:'可补充希望小微参考的服务信息',hint:'选填，用于补充服务相关上下文。'}
+};
+const cidInput=document.getElementById('cid');
+const cidHint=document.getElementById('cidHint');
+const firstQuestion=document.getElementById('firstQuestion');
+const CONTEXT_LIMIT=200;
+const context=document.getElementById('context');
+const contextHint=document.getElementById('contextHint');
+const contextCount=document.getElementById('contextCount');
+let contextComposing=false;
+function updateContextCount(){
+ const n=state.context.length;
+ contextCount.textContent=n+'/'+CONTEXT_LIMIT;
+ contextCount.classList.toggle('is-limit',n>=CONTEXT_LIMIT);
+}
+function clampContextValue(){
+ if(context.value.length>CONTEXT_LIMIT){
+  const pos=context.selectionStart;
+  context.value=context.value.slice(0,CONTEXT_LIMIT);
+  if(pos!=null&&context.setSelectionRange){
+   const next=Math.min(pos,CONTEXT_LIMIT);
+   context.setSelectionRange(next,next);
+  }
+ }
+ state.context=context.value;
+ updateContextCount();
+}
+const shopFields=document.getElementById('shopFields');
+const serviceFields=document.getElementById('serviceFields');
+const shopIdInput=document.getElementById('shopId');
+const productIdList=document.getElementById('productIdList');
+const addProduct=document.getElementById('addProduct');
+const appidInput=document.getElementById('appid');
+const pagePathInput=document.getElementById('pagePath');
+const followInputs=[1,2,3].map(n=>document.getElementById('followUp'+n));
+const buttons=Array.from(document.querySelectorAll('[data-scenario]'));
+function escapeAttr(value){
+ return String(value).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+}
+function isCidValid(value){
+ return value===''||CID_PATTERN.test(value);
+}
+function updateCidValidity(){
+ const valid=isCidValid(state.cid);
+ cidInput.setAttribute('aria-invalid',valid?'false':'true');
+ cidInput.setCustomValidity(valid?'':CID_ERROR);
+ cidHint.textContent=valid?'':CID_ERROR;
+ cidHint.classList.toggle('is-error',!valid);
+}
+function renderProductIds(){
+ const active=document.activeElement;
+ const activeIndex=active&&active.getAttribute&&active.getAttribute('data-product-index');
+ const pos=active&&typeof active.selectionStart==='number'?active.selectionStart:null;
+ productIdList.innerHTML=state.productIds.map(function(id,index){
+  return '<div class="product-row">'+
+   '<input type="text" data-product-index="'+index+'" value="'+escapeAttr(id)+'" autocomplete="off" aria-label="小店商品id '+(index+1)+'" placeholder="输入小店商品id">'+
+   '<button type="button" class="btn-del" data-remove-index="'+index+'">删除</button>'+
+   '</div>';
+ }).join('');
+ if(activeIndex!=null){
+  const again=productIdList.querySelector('[data-product-index="'+activeIndex+'"]');
+  if(again){
+   again.focus();
+   if(pos!=null&&again.setSelectionRange) again.setSelectionRange(pos,pos);
+  }
+ }
+}
+function updateScenarioPresentation(){
+ buttons.forEach(function(button){
+  const active=button.dataset.scenario===state.activeScenario;
+  button.classList.toggle('active',active);
+  button.setAttribute('aria-pressed',String(active));
+ });
+ const isShop=state.activeScenario==='shop';
+ shopFields.hidden=!isShop;
+ serviceFields.hidden=isShop;
+ context.placeholder=scenarioHints[state.activeScenario].placeholder;
+ contextHint.textContent=scenarioHints[state.activeScenario].hint;
+}
+buttons.forEach(function(button){
+ button.addEventListener('click',function(){
+  state.activeScenario=button.dataset.scenario;
+  updateScenarioPresentation();
+ });
+});
+cidInput.addEventListener('input',function(){
+ state.cid=cidInput.value;
+ updateCidValidity();
+});
+firstQuestion.addEventListener('input',function(){state.firstQuestion=firstQuestion.value;});
+context.addEventListener('compositionstart',function(){contextComposing=true;});
+context.addEventListener('compositionend',function(){
+ contextComposing=false;
+ clampContextValue();
+});
+context.addEventListener('input',function(){
+ if(contextComposing){
+  contextCount.textContent=context.value.length+'/'+CONTEXT_LIMIT;
+  contextCount.classList.toggle('is-limit',context.value.length>=CONTEXT_LIMIT);
+  return;
+ }
+ clampContextValue();
+});
+followInputs.forEach(function(input,index){input.addEventListener('input',function(){state.followUps[index]=input.value;});});
+shopIdInput.addEventListener('input',function(){state.shopId=shopIdInput.value;});
+appidInput.addEventListener('input',function(){state.appid=appidInput.value;});
+pagePathInput.addEventListener('input',function(){state.pagePath=pagePathInput.value;});
+productIdList.addEventListener('input',function(event){
+ const input=event.target.closest('[data-product-index]');
+ if(!input) return;
+ const index=+input.getAttribute('data-product-index');
+ state.productIds[index]=input.value;
+});
+productIdList.addEventListener('click',function(event){
+ const button=event.target.closest('[data-remove-index]');
+ if(!button) return;
+ const index=+button.getAttribute('data-remove-index');
+ state.productIds.splice(index,1);
+ renderProductIds();
+});
+addProduct.addEventListener('click',function(){
+ state.productIds.push('');
+ renderProductIds();
+});
+document.getElementById('fillExample').addEventListener('click',function(){
+ state.cid='000123456789012345678901234567890';
+ state.firstQuestion='这款冲锋衣适合日常通勤吗？';
+ state.context='希望突出可拆卸内胆和通勤、轻徒步两种使用场景。';
+ state.followUps=['尺码应该怎么选？','下雨天穿这件合适吗？','平时应该怎么清洗保养？'];
+ cidInput.value=state.cid;
+ firstQuestion.value=state.firstQuestion;
+ context.value=state.context;
+ followInputs.forEach(function(input,index){input.value=state.followUps[index];});
+ updateCidValidity();
+ updateScenarioPresentation();
+ updateContextCount();
+ document.getElementById('status').textContent='已填入示例（含示例cid），可继续自由编辑';
+});
+renderProductIds();
+updateCidValidity();
+updateScenarioPresentation();
+updateContextCount();
+})();
+</script>
+</body>
+</html>

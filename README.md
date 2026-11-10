@@ -17,6 +17,10 @@ python3 -m http.server 8077
 # 打开 http://localhost:8077/index.html
 ```
 
+## 同仓库演示
+
+- [问小微 B 端配置演示](wenxiaowei-b-demo/index.html)：独立页面。GitHub Pages 路径为 `/wenxiaowei-b-demo/`。
+
 ## 目录
 
 ```
